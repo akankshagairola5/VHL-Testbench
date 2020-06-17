@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "assert": "^2.0.0",
     "chai": "^4.2.0",
+    "chromium":"^2.1.2",
     "mocha": "^8.0.1",
     "puppeteer": "^4.0.0"
   }
