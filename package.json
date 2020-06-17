@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "",
-    "start": "node index.js",
-  	"test": "mocha --timeout 0 test/bootstrap.js --recursive test"
+    "test": "mocha --timeout 0 test/bootstrap.js --recursive test",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
