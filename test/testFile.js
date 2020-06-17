@@ -8,7 +8,7 @@ const opts = {
     slowMo: 0,
     timeout: 0,
     defaultViewport: null,
-    args: ['--start-maximized', '--window-size=1920,1080']
+    args: ['--start-maximized', '--window-size=1920,1080',"--no-sandbox"]
 }
 
 describe('Test for VHL testbench', async () => {
