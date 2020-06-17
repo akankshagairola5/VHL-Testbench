@@ -9,7 +9,7 @@ const globalVariables = _.pick(global, ['browser', 'expect']);
 
 /* configurable options or object for puppeteer */
 const opts = {
-    headless: true,
+    headless: false,
     slowMo: 0,
     timeout: 0,
     defaultViewport: null,
