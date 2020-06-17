@@ -4,14 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --timeout 0  ./test/testFile.js"
+    "test": "",
+    "start": "node index.js",
+  	"test": "mocha --timeout 0 test/bootstrap.js --recursive test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "assert": "^2.0.0",
     "chai": "^4.2.0",
-    "chromium":"^2.1.2",
+    "express": "^4.17.1",
+    "http-server": "^0.10.0",
     "mocha": "^8.0.1",
     "puppeteer": "^4.0.0"
   }
