@@ -3,6 +3,9 @@
 const puppeteer = require('puppeteer');
 const { expect } = require('chai');
 const _ = require('lodash');
+const server = require('../index');
+
+
 
 /* create the global variable by using lodash function */
 const globalVariables = _.pick(global, ['browser', 'expect']);
@@ -20,6 +23,7 @@ const opts = {
 before (async () => {
   global.expect = expect;
   global.browser = await puppeteer.launch(opts);
+
 });
 
 /* call the function after puppeteer done testing */
