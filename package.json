@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --timeout 0  ./test/bootstrap.js --recursive test"
+    "test": "mocha --timeout 0  ./test/testFile.js"
   },
   "keywords": [],
   "author": "",
