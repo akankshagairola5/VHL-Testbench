@@ -22,6 +22,7 @@ describe('Test for VHL testbench', async () => {
         page = (await browser.pages())[0]
         //  page = await browser.newPage()
         await page.goto("https://lti-gateway-testing.s3.amazonaws.com/lti-client.html");
+        await page.screenshot({ path: 'VHL1.png' });
 
         console.log("launched...")
 
@@ -42,7 +43,7 @@ describe('Test for VHL testbench', async () => {
         const input = await page.$('input[id="call_url"]');
         await input.click({ clickCount: 3 })
         await input.type("https://reader.vhlcentral.com/demo/student-edition/comproqa_seneros_1b");
-
+        await page.screenshot({ path: 'VHL1.png' });
 
         const key = await page.$('input[id="secret"]');
         await key.click({ clickCount: 3 })
