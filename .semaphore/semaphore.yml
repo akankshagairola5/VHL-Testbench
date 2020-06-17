@@ -23,8 +23,8 @@ blocks:
       epilogue:
         always:
           commands:
-            - '- artifact push job logs/test.log'
-            - '- artifact push job screenshots'
+            - artifact push job logs/test.log
+            - artifact push job screenshots
   - name: Unit tests
     task:
       prologue:
